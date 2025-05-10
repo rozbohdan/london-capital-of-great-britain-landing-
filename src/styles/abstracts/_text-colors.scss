@@ -1,13 +1,6 @@
 @use "sass:map";
 @use "variables";
 
-// Text colors
-variables.$text-colors: (
-  primary: map.get(variables.$colors, primary),
-  dark: map.get(variables.$colors, black-true),
-  muted: map.get(variables.$colors, black-soft)
-);
-
 // Mixin for text colors
 @mixin text-color($color-name) {
   color: map.get(variables.$text-colors, $color-name);
